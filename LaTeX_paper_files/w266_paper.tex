@@ -1,0 +1,149 @@
+% This is a template to conform to ACL academic paper submissions (for the most part)
+% You can simply edit areas with a comment line that says "(EDIT BELOW)"
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% beginning of preamble %
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{cite}
+\usepackage{geometry}
+\usepackage{multicol}
+\usepackage{etoolbox}
+\setlength{\columnsep}{0.6cm}
+\geometry{top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm}
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{} % remove auto "reference" title
+
+% the line below lets you declate "\tab" in text to add tab but I'm not using it.
+% \newcommand\tab[1][1cm]{\hspace*{#1}} 
+
+% the following few lines allow you to make mid-document adjustments to margin.
+% this is useful specifically for changing th abstract margins to ACL convention.
+\newenvironment{changemargin}[2]{%
+\begin{list}{}{%
+\setlength{\leftmargin}{#1}%
+\setlength{\rightmargin}{#2}%
+}%
+\item[]}
+{\end{list}}
+
+%%%%%%%%%%%%%%%%%%%
+% end of preamble %
+%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%
+% Paper Heading %
+%%%%%%%%%%%%%%%%%
+\begingroup
+	\fontsize{15pt}{15pt}
+	\begin{center}
+	\textbf{User Lifecycle Prediction in Gaming Community Forums} % paper title (EDIT)
+	\end{center}
+\endgroup
+\vspace{1mm}
+
+% if you have more than one group member you'll want this to be in column format
+\begingroup
+	\begin{center}
+	\fontsize{12pt}{12pt}
+	\textbf{David Skarbrevik} \\
+	University of California, Berkeley \\
+	School of Information \\
+	skarbrevik@berkeley.edu
+	\end{center}
+\endgroup
+\vspace{1mm}
+
+\begin{multicols*}{2} % initiates two column format for rest of paper
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is the text of your abstract (EDIT BELOW) %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begingroup
+	\fontsize{12pt}{12pt}
+	\begin{center}
+	\textbf{Abstract}
+	\end{center}
+\endgroup
+\begingroup 
+	\begin{changemargin}{0.6cm}{0.6cm}
+	\fontsize{10pt}{10pt}
+	\noindent
+	This is the text of the abstract. I'm talking about what kind of work this is. 				What kind of things have been done. What I'm doing personally that is new. What 			interesting thing I found. And lastly what will happen in the future. Just a few 			sentences. I'm going to type more to get this first draft to go to a second column. 		Let's talk about the general plan for my work. I'm planning to replicate the user 			lifetime work of Jurafsky. It would have some immediate value to the company that 			develops the video game I'm analyzing. I have a separate idea that I may explore if I 		have time. I want to do sentiment analysis on this forum data around the times that 		game updates are released. There tends to be a lot of controversy when updates are 			made because they rebalance the power of different characters. So it would be 				interesting to be able to automatically analyze how gamers feel about changes as 			they're made.
+	\end{changemargin}
+\endgroup
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is text for an "Introduction" section (EDIT BELOW) %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begingroup
+\begin{flushleft}
+\fontsize{12pt}{12pt}
+\textbf{1~~~~Introduction}
+\end{flushleft}
+\endgroup
+\noindent
+This will introduce the topic of interest in this work. Will talk a bit more about what has been done in the past  ~\cite{Leskovec} and what could be interesting for the field in the future.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%###########%%%%%%
+% This is text for an "Experimental Procedure" section (EDIT BELOW) %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%###########%%%%%%
+\begingroup
+\begin{flushleft}
+\fontsize{12pt}{12pt}
+\textbf{2~~~~Experimental Procedure}
+\end{flushleft}
+\endgroup
+\noindent
+This section will discuss the data that is being worked on and how it was obtained. It will also talk about the specific types of analysis or models that were performed/built during the It may briefly discuss why this data was appropriate for this research or why it was interesting.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is text for a "Results" section (EDIT BELOW) %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begingroup
+\begin{flushleft}
+\fontsize{12pt}{12pt}
+\textbf{3~~~~Results}
+\end{flushleft}
+\endgroup
+\noindent
+A results section is about logically displaying a series of factual findings based on your experimental procedure. There will be graphics explaining interesting findings from your analysis and/or model. This shouldn't discuss \textit{how} you got the results (that would be in your experimental section) and it shouldn't discuss much about why you personally think it is interesting (this would be in your discussion/conclusion). 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is text for a "Discussion" section (EDIT BELOW) %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begingroup
+\begin{flushleft}
+\fontsize{12pt}{12pt}
+\textbf{4~~~~Discussion}
+\end{flushleft}
+\endgroup
+\noindent
+The discussion section is generally an interesting but hand wavy part of the paper where the authors can discuss what they think is interesting about the results and what implications they think it may have on the field. They may also use this section to talk about future direction for this work.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is text for an "References" section (EDIT BELOW) %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begingroup
+\begin{flushleft}
+\fontsize{12pt}{12pt}
+\textbf{References}
+\end{flushleft}
+\endgroup
+\noindent
+\vspace{-7mm}
+\bibliography{w266_resources}{}
+\bibliographystyle{plain}
+
+\end{multicols*}
+\end{document}
