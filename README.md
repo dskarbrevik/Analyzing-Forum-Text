@@ -1,2 +1,5 @@
 # Analyzing-Forum-Text
-class project for NLP class
+
+W266 Course Project
+David Skarbrevik
+
