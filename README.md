@@ -1,6 +1,4 @@
-# User Life Cycle Analysis 
-# in the _Overwatch_ 
-# Gaming Forum
+# User Life Cycle Analysis in the _Overwatch_ Gaming Forum
 
 
 Project for Berkeley NLP Course
