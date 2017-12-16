@@ -5,9 +5,9 @@ Project for Berkeley NLP Course
 
 Author: David Skarbrevik
 
-You can read my corresponding [white paper](/final_paper.pdf) on this project.
+You can read the corresponding [white paper](/final_paper.pdf) for this project.
 
-Or alternatively explore my analysis in this [main jupyter notebook](/Overwatch_Forum_Analysis.ipynb).
+Or alternatively explore the analysis in this [main jupyter notebook](/Overwatch_Forum_Analysis.ipynb).
 
 ***
 
