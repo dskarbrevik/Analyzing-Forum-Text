@@ -1,8 +1,11 @@
-# User Lifecycle Prediction in Gaming Community Forums
+# User Lifecycle Prediction in Overwatch Gaming Community Forum
 
-W266 Course Project
-David Skarbrevik
+Project for Berkeley NLP Course
+Author: David Skarbrevik
 
+You can read my corresponding [white paper](/final_paper.pdf) on this project.
+
+Or alternatively explore my analysis in this [main jupyter notebook](/Overwatch_Forum_Analysis.ipynb).
 
 Main features of this repo currently:
 * **"final_paper.pdf"** is the white paper of this project.
