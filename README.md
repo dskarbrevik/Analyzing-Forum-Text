@@ -9,8 +9,6 @@ You can read the corresponding [white paper](/final_paper.pdf) for this project.
 
 Or alternatively explore the analysis in this [main jupyter notebook](/Overwatch_Forum_Analysis.ipynb).
 
-***
-
 ### Main features of this repo currently:
 * **final_paper.pdf** is the white paper of this project.
 
@@ -18,6 +16,8 @@ Or alternatively explore the analysis in this [main jupyter notebook](/Overwatch
 
 * **Overwatch_Forum_Analysis.ipynb** indepth processing and EDA of Overwatch forum posts.
 * **utils.py** lots of great helper functions to process text, build language models and score those models.
+
+***
 
 ### To do list (for myself):
 
