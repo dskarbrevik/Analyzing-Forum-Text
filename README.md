@@ -18,3 +18,17 @@ Or alternatively explore the analysis in this [main jupyter notebook](/Overwatch
 
 * **Overwatch_Forum_Analysis.ipynb** indepth processing and EDA of Overwatch forum posts.
 * **utils.py** lots of great helper functions to process text, build language models and score those models.
+
+### To do list (for myself):
+
+* 1st priorities:
+  * add error bars to plots
+  * isolate users that were initially active but then abandoned the forum
+  
+* 2nd priorities:
+  * come up with ideas for baseline classifier (look at Danescu et al. for inspiration)
+  * build simple baseline with sklearn
+  
+* 3rd priorities:
+  * develop automated framework for pulling new data from forum and updating "at risk" churn group from classifier
+  * integrate other forums (or at least other Blizzard forums... should try WoW next probably)
