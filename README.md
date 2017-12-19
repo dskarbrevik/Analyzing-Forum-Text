@@ -21,14 +21,17 @@ Or alternatively explore the analysis in this [main jupyter notebook](/Overwatch
 
 ### To do list (for myself):
 
-* 1st priorities:
+* 1st priorities (must have):
   * add error bars to plots
   * isolate users that were initially active but then abandoned the forum
+  * add some kind of backoff smoothing to LMs
+  * consider different ways of filtering text for LMs (or not filtering at all)
   
-* 2nd priorities:
+* 2nd priorities (should have):
   * come up with ideas for baseline classifier (look at Danescu et al. for inspiration)
   * build simple baseline with sklearn
   
-* 3rd priorities:
+* 3rd priorities (nice to have):
   * develop automated framework for pulling new data from forum and updating "at risk" churn group from classifier
   * integrate other forums (or at least other Blizzard forums... should try WoW next probably)
+  * consider neural network based classifier
