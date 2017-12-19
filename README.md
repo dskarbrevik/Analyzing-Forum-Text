@@ -32,6 +32,8 @@ Or alternatively explore the analysis in this [main jupyter notebook](/Overwatch
   * build simple baseline with sklearn
   
 * 3rd priorities (nice to have):
+  * scrape replies to posts (should drastically increase dataset, but links are not as predictable; need to figure that out)
   * develop automated framework for pulling new data from forum and updating "at risk" churn group from classifier
+   * dashboard to display this information
   * integrate other forums (or at least other Blizzard forums... should try WoW next probably)
   * consider neural network based classifier
