@@ -640,7 +640,7 @@ def plot_user_posts(df, save=False, high_res=False):
     for user, count in all_users:
         user_counts.append(count)
 
-    f, (ax, ax2) = plt.subplots(2, 1, sharex=True)
+    f, (ax, ax2) = plt.subplots(2, 1, sharex=True, figsize=(10,8))
 
     # plot the same data on both axes
     ax.hist(user_counts, bins="auto")
