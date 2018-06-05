@@ -262,7 +262,7 @@ def make_trigram_model(df, num_users=500, smooth=None, num_post_per_user=2, word
     if all_users == False:
     
         for i in range(len(snapshot_users)):
-            user_text = df[df['user'] == snapshot_users[i]]["all_text"].tolist()
+            user_text = df[df['user'] == snapshot_users[i]]['text'].tolist()
             text_sample = random.sample(user_text, num_post_per_user)
             count_check = 0
             if len(text_sample) != num_post_per_user:
@@ -275,7 +275,7 @@ def make_trigram_model(df, num_users=500, smooth=None, num_post_per_user=2, word
                 # add post to training text
                 training_text.append(post) 
 
-                tmp_index = df.index[(df['user'] == snapshot_users[i]) & (df['all_text'] == post)].tolist()
+                tmp_index = df.index[(df['user'] == snapshot_users[i]) & (df['text'] == post)].tolist()
                 if not tmp_index:
                     raise Exception("Could not find the post in the df; {0}: {1}".format(snapshot_user[i], post))
                 #if len(tmp_index) > 1:
@@ -289,7 +289,7 @@ def make_trigram_model(df, num_users=500, smooth=None, num_post_per_user=2, word
             count += 1
             if count % 100 == 0:
                 print("Currently at user number {}".format(count))
-            user_text = df[df['user'] == snapshot_users[i]]["all_text"].tolist()
+            user_text = df[df['user'] == snapshot_users[i]]["text"].tolist()
             for post in user_text:
                 # add post to training text
                 training_text.append(post) 
@@ -531,7 +531,7 @@ def score_user(user, df_by_month, lm_counts, lm_context_totals):
     all_avg_entropy = defaultdict(lambda:None)
     for key in df_by_month.keys():
         df = df_by_month[key]
-        user_posts = df[df['user'] == user]['all_text'].tolist()
+        user_posts = df[df['user'] == user]['text'].tolist()
         
         cross_entropy_all = []
         for post in user_posts:
